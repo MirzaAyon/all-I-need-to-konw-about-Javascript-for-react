@@ -36,3 +36,6 @@ const sum = (animal) => {
     console.log(animal);
 }
 sum();
+
+
+//nested objct
