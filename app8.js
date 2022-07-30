@@ -56,3 +56,16 @@ console.log(output5); //age array return korsilo but ebar obj return kortese
 //find e cond bhul dile undefined return krbe
 
 //ebar same kaj ami forEach diye krbo
+
+
+//new kore ekta map chalabo
+const result = products.map((pd) => pd);
+console.log(result);
+const result8 = products.map((pd, index) => {
+    console.log(index);
+    console.log(pd);
+    console.log(index + 1);
+    //etake react e component rendering bole
+    //egula ke cmnt kore kore dekhbo
+    //cart upr chaile evabe serial dite parbo
+});
