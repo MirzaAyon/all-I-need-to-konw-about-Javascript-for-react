@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage</title>
+</head>
+
+<body>
+    <h1>Local Storage and Session Storage</h1>
+    <input type="text" placeholder="storage id" id="storage-id">
+    <input type="text" placeholder="storage value" id="storage-value">
+    <br>
+    <button onclick="addToLocalStorage()">Add to Local Storage</button>
+
+    <script>
+        const addToLocalStorage = () => {
+            const idInput = document.getElementById('storage-id');
+            const id = idInput.value;
+            const valueInput = document.getElementById('storage-value');
+            const value = valueInput.value;
+            if (id && value) {
+                localStorage.setItem(id, value);
+            }
+            //blank dile r blank show hbe na 
+            //karon 2 tai truthy maan
+
+
+            idInput.value = '';
+            valueInput.value = "";
+            //ekhn kichu likhe dile sheta update hbe 
+            //ager likha wala tae new value dile sheta update hbe 
+        }
+
+    </script>
+</body>
+
+</html>

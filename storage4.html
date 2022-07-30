@@ -14,20 +14,22 @@
     <input type="text" placeholder="storage value" id="storage-value">
     <br>
     <button onclick="addToLocalStorage()">Add to Local Storage</button>
-    <!-- first e inspact kore application e gelam local sto te shob clean-->
-    <!-- new kichu dekhate chaile clear all btn e click korbo -->
-    <!-- session sto te ja ache egulao clear kore dilam -->
-    <!-- 2 ta sto same way tei kaj kore -->
-    <!-- session sto chole jae localsto theke jae -->
+
     <script>
-        localStorage.clear
-        // mane clear kora
-        localStorage.getItem
-        // kono ekta item ke pawa 
-        localStorage.removeItem
-        // kono ekta item ke remove kora
-        localStorage.setItem
-        // new kichu add kora
+        const addToLocalStorage = () => {
+            const idInput = document.getElementById('storage-id');
+            const id = idInput.value;
+            const valueInput = document.getElementById('storage-value');
+            const value = valueInput.value;
+            localStorage.setItem(id, value);
+
+            idInput.value = '';
+            valueInput.value = "";
+            //ekhn kichu likhe dile sheta update hbe 
+            //ager likha wala tae new value dile sheta update hbe 
+            //blank dile blank show hbe 
+        }
+
     </script>
 </body>
 
